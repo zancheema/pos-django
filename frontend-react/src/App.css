@@ -1,0 +1,41 @@
+.sidebar {
+    height: 100vh;
+    transition: 0.2s;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+}
+
+.sidebar-item:hover {
+    border-right: 4px solid white;
+    background: rgba(var(--bs-secondary-rgb));
+}
+
+main {
+    width: 100%;
+}
+
+.receipt {
+    font-size: 10px;
+}
+
+.receipt h3 {
+    font-size: 15px;
+}
+
+.receipt h5 {
+    font-size: 12px;
+}
+
+/* window.print() page's style */
+@page {
+    size: 2.25in 3.125in;
+    margin: 0mm;
+}
